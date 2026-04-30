@@ -1,9 +1,17 @@
 # Desafio-FTP-Web-SMB-
+Wordlists Utilizadas:
+
+Arquivo               Conteúdo (Exemplos)	                                        Finalidade
+
+users.txt	      admin, root, user, msfadmin	                      Identificação de contas de sistema e serviço.
+pass.txt	      123456, password, msfadmin, admin	                  Teste de senhas fracas e padrões de fábrica.
+
+
+
 
 
 medusa -h 192.168.56.101 -u admin -P pass.txt -M http -m DIR:/dvwa/vulnerabilities/brute/
-    
-Validação de Acesso: Sucesso confirmado ao obter o par de credenciais que permite o login no painel administrativo do DVWA.
+Validação de Acesso: O acesso é validado quando o Medusa retorna a mensagem SUCCESS . Para confirmar, realizei um acesso manual via terminal: ftp 192.168.56.101.    
 
 
 **tive um problema que o medusa teve um erro de modulo, então migrei pra hydra**
